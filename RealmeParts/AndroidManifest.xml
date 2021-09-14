@@ -27,7 +27,7 @@
         android:minSdkVersion="24" />
 
     <application
-        android:icon="@drawable/ic_realmeparts"
+        android:icon="@android:drawable/sym_def_app_icon"
         android:label="@string/device_title"
         android:theme="@style/AppTheme">
 
@@ -55,6 +55,9 @@
             <meta-data
                 android:name="com.android.settings.icon"
                 android:resource="@drawable/ic_realmeparts" />
+            <meta-data
+                android:name="com.android.settings.bg.hint"
+                android:resource="@color/homepage_realmeparts_background" />
             <meta-data
                 android:name="com.android.settings.category"
                 android:value="com.android.settings.category.ia.homepage" />
