@@ -64,12 +64,6 @@
         android:title="@string/misc_title">
 
         <SwitchPreference
-            android:key="game"
-            android:summary="@string/game_mode_summary"
-            android:title="@string/tile_game_mode"
-            android:icon="@drawable/ic_game_tile" />
-
-        <SwitchPreference
             android:key="otg"
             android:summary="@string/otg_mode_summary"
             android:title="@string/otg_mode_title"

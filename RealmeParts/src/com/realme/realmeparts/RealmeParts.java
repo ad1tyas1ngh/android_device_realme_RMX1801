@@ -51,10 +51,6 @@ public class RealmeParts extends PreferenceFragment
 
     public static final String KEY_VIBSTRENGTH = "vib_strength";
     public static final String KEY_OTG_SWITCH = "otg";
-    public static final String KEY_GAME_SWITCH = "game";
-
-    public static final String TP_LIMIT_ENABLE = "/proc/touchpanel/oppo_tp_limit_enable";
-    public static final String TP_DIRECTION = "/proc/touchpanel/oppo_tp_direction";
 
     final static String PREF_HEADPHONE_GAIN = "headphone_gain";
     private static final String HEADPHONE_GAIN_PATH = "/sys/kernel/sound_control/headphone_gain";
@@ -68,7 +64,6 @@ public class RealmeParts extends PreferenceFragment
     private SecureSettingCustomSeekBarPreference mMicrophoneGain;
 
     private static TwoStatePreference mOTGModeSwitch;
-    private static TwoStatePreference mGameModeSwitch;
 
     @Override
     public void onCreatePreferences(Bundle savedInstanceState, String rootKey) {
@@ -97,11 +92,6 @@ public class RealmeParts extends PreferenceFragment
         mOTGModeSwitch.setEnabled(OTGModeSwitch.isSupported());
         mOTGModeSwitch.setChecked(OTGModeSwitch.isCurrentlyEnabled(this.getContext()));
         mOTGModeSwitch.setOnPreferenceChangeListener(new OTGModeSwitch());
-
-        mGameModeSwitch = (TwoStatePreference) findPreference(KEY_GAME_SWITCH);
-        mGameModeSwitch.setEnabled(GameModeSwitch.isSupported());
-        mGameModeSwitch.setChecked(GameModeSwitch.isCurrentlyEnabled(this.getContext()));
-        mGameModeSwitch.setOnPreferenceChangeListener(new GameModeSwitch());
     }
 
     @Override

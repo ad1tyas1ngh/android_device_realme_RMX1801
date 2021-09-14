@@ -57,7 +57,7 @@
                 android:resource="@drawable/ic_realmeparts" />
             <meta-data
                 android:name="com.android.settings.category"
-                android:value="com.android.settings.category.ia.system" />
+                android:value="com.android.settings.category.ia.homepage" />
             <meta-data android:name="com.android.settings.summary"
                 android:resource="@string/device_summary" />
         </activity>
@@ -108,17 +108,6 @@
             android:name="com.realme.realmeparts.OtgToggleService"
             android:icon="@drawable/ic_otg_tile"
             android:label="@string/tile_otg_mode"
-            android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
-            <intent-filter>
-                <action
-                    android:name="android.service.quicksettings.action.QS_TILE"/>
-            </intent-filter>
-        </service>
-
-        <service
-            android:name="com.realme.realmeparts.GameModeTileService"
-            android:icon="@drawable/ic_game_tile"
-            android:label="@string/tile_game_mode"
             android:permission="android.permission.BIND_QUICK_SETTINGS_TILE">
             <intent-filter>
                 <action
