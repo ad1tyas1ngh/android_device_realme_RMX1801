@@ -49,4 +49,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
     PRODUCT_NAME="RMX1801" \
     PRIVATE_BUILD_DESC="sdm660_64-user 10 QKQ1.191014.001 eng.root.20200727.144331 release-keys"
 
-BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210805.001.A1/7474174:user/release-keys"
+BUILD_FINGERPRINT := "google/redfin/redfin:11/RQ3A.210905.001/7511028:user/release-keys"
